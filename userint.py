@@ -21,8 +21,7 @@ class UserInt:
 
     def performOperation(self, chosen_Operation, username):
         calculate = CalculatorOp()
-        while True:
-            try:
+        try:
                 if chosen_Operation == "1":
                     summ = calculate.add(self.firstNumber, self.secondNumber)
                     print(f"Hey {username}, the sum is {summ}")
@@ -38,9 +37,9 @@ class UserInt:
                     print(f"Hey {username}, the quotient is {quotient}")
                 else:
                     raise ValueError
-            except TypeError:
-                print("Please check your typings to avoid errors! ")
-            except ValueError:
-                print("Numbers Only or Check your typings to avoid errors! ")
-            except ZeroDivisionError:
-                print("Undefined! Please Try Again!")        
+        except TypeError:
+            print("Please check your typings to avoid errors! ")
+        except ValueError:
+            print("Numbers Only or Check your typings to avoid errors! ")
+        except ZeroDivisionError:
+            print("Undefined! Please Try Again!")        
