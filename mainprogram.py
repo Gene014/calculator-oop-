@@ -4,10 +4,9 @@ ui = UserInt()
 
 while True:
     # ask the user to input his name
-    username = input(
-        f"\n\33[33mHi, Good day! Please enter your name.\n\33[0m")
+    username = input(f"\n\33[33mHi, Good day! Please enter your name.\n\33[0m")
     if username.isnumeric():
-        raise TypeError
+        raise TypeError("Please check your typings to avoid errors! ")
     
     ui.firstNumberInput()
     ui.secondNumberInput()
