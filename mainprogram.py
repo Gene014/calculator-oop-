@@ -1,5 +1,4 @@
 from userint import UserInt
-
 ui = UserInt()
 
 while True:
@@ -28,3 +27,4 @@ while True:
         continue
     else:
         raise TypeError
+    

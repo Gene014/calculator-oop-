@@ -1,5 +1,5 @@
 from calculatorop import CalculatorOp
-
+from calculatorbygene import CalcModified
 class UserInt:
         #ask the user for the given.
     def firstNumberInput (self):
@@ -21,6 +21,7 @@ class UserInt:
 
     def performOperation(self, chosen_Operation, username):
         calculate = CalculatorOp()
+        mod = CalcModified()
         try:
                 if chosen_Operation == "1":
                     summ = calculate.add(self.firstNumber, self.secondNumber)
@@ -35,6 +36,9 @@ class UserInt:
                 elif chosen_Operation == "4":
                     quotient = calculate.divide(self.firstNumber, self.secondNumber)
                     print(f"Hey {username}, the quotient is {quotient}")
+                elif chosen_Operation == "5": 
+                    square = mod.squaringProduct(self.firstNumber)
+                    print(f"Hey {username}, the square is {square}")
                 else:
                     raise ValueError
         except TypeError:
