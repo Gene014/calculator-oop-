@@ -39,6 +39,9 @@ class UserInt:
                 elif chosen_Operation == "5": 
                     square = mod.squaringProduct(self.firstNumber)
                     print(f"Hey {username}, the square is {square}")
+                elif chosen_Operation == "6": 
+                    sqrt = mod.sqrt(self.firstNumber)
+                    print(f"Hey {username}, the square root is {sqrt}")    
                 else:
                     raise ValueError
         except TypeError:
